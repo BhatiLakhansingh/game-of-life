@@ -4,7 +4,7 @@ pipeline{
 	choice(name: 'CHOICE', choices: ['master', 'sprint2',], description: 'Pick something')
 	}
 	stages{
-	    stage('parameters'){
+	    stage('example'){
 		  steps{ 
 		   echo "Choice: ${params.CHOICE}"
 		   }
