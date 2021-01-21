@@ -1,12 +1,11 @@
-Pipeline{
-	//**
+pipeline{
 	agent any
 	stages{
 		stage('GIT'){
 			git 'https://github.com/BhatiLakhansingh/game-of-life.git'
 		}
 		stage('build'){
-			sh 'mvn package
+			sh 'mvn package'
 		}
 	}
 }
