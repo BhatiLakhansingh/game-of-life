@@ -1,7 +1,7 @@
 pipeline{
 	agent any
 	stages{
-		stage('GIT'){
+		stage('git'){
 			git 'https://github.com/BhatiLakhansingh/game-of-life.git'
 		}
 		stage('build'){
